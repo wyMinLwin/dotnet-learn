@@ -11,9 +11,11 @@ namespace REPOSITORY.UnitOfWork
 		{
 			_dataContext = dataContext;
 			Item = new ItemRepository(_dataContext);
+            User = new UserRepository(_dataContext); 
 		}
 
         public IItemRepository Item { get; private set; }
+        public IUserRepository User { get; private set; }
 
         public void Dispose() 
         {

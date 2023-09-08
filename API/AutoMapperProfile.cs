@@ -1,5 +1,6 @@
 ﻿using System;
 using MODEL.DTOs.ItemDtos;
+using MODEL.DTOs.UserDTOs;
 using MODEL.Entities;
 using AutoMapper;
 namespace API
@@ -11,6 +12,7 @@ namespace API
 			CreateMap<ItemDTO, Item>();
             CreateMap<Item, ItemDTO>();
 			CreateMap<CreateItemDTO, Item>();
+			CreateMap<CreateUserDTO, User>();
         }
     }
 }

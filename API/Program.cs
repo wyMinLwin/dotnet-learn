@@ -17,6 +17,7 @@ builder.Services.AddDbContext<DataContext>(options =>
 });
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 builder.Services.AddScoped<IItemService, ItemService>();
+builder.Services.AddScoped<IUserService, UserService>();
 builder.Services.AddAutoMapper(typeof(Program).Assembly);
 
 var app = builder.Build();

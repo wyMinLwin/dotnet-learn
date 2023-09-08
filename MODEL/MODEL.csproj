@@ -10,11 +10,13 @@
     <None Remove="Entities\" />
     <None Remove="DTOs\" />
     <None Remove="DTOs\ItemDtos\" />
+    <None Remove="DTOs\UserDTOs\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Entities\" />
     <Folder Include="DTOs\" />
     <Folder Include="DTOs\ItemDtos\" />
+    <Folder Include="DTOs\UserDTOs\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.0" />
