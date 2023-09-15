@@ -21,6 +21,17 @@ namespace API.Controllers
 			await _userService.CreateUser(request);
 			return Ok();
 		}
+
+		[HttpPost("Login")]
+		public async Task<ActionResult<string>> Login(LoginDTO request)
+		{
+			var res = await _userService.LoginUser(request);
+			if (res == null)
+			{
+				return BadRequest("Username or password wrong.");
+			}
+			return res;
+		}
 	}
 }
 
