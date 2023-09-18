@@ -1,10 +1,12 @@
 ﻿using System;
+using Microsoft.AspNetCore.Authorization;
 using MODEL.DTOs.ItemDtos;
 using BAL.Services.IServices;
 using Microsoft.AspNetCore.Mvc;
 namespace API.Controllers
 {
 	[ApiController]
+	[Authorize]
 	[Route("[controller]/api")]
 	public class ItemController:ControllerBase
 	{
